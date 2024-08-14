@@ -1,0 +1,21 @@
+= render(Admin::HeaderComponent.new(name: "Models")) do |component|
+  - component.with_actions do
+    = link_to new_admin_model_path, class: "btn btn-primary", data: { turbo_frame: "remote_modal" } do
+      %i.bi.bi-plus-circle
+      Model
+
+.row.mt-3
+  .col-sm-12
+    .card
+      .card-body
+        = search_form_for [:admin, @q] do |f|
+          = render(Search::RansackComponent.new(f: f, resource_klass: Model)) do |component|
+            - Model.ransackable_attributes.each do |attribute|
+              - component.with_field(f: f, resource_klass: Model, attribute: attribute)
+
+        = render(Search::TableComponent.new(pagy: @pagy, id: 'models-table')) do |component|
+          - component.with_columns([{ attribute: "id" },
+            { attribute: "created_at", q: @q },
+            { label: "Actions" }])
+
+          = render @models

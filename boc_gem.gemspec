@@ -6,9 +6,9 @@ Gem::Specification.new do |spec|
   spec.name = "boc_gem"
   spec.version = BocGem::VERSION
   spec.authors = ["David Besonen"]
-  spec.email = ["david.besonen@huskers.unl.edu"]
+  spec.email = ["david.besonen139@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
+  spec.summary = "The boc_gem is a simple gem that provides a variety of convenience methods that are designed to optimize our standard workflows."
   spec.description = "TODO: Write a longer description or delete this line."
   spec.homepage = "TODO: Put your gem's website or public repo URL here."
   spec.license = "MIT"
