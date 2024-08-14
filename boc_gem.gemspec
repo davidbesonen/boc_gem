@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "The boc_gem is a simple gem that provides a variety of convenience methods that are designed to optimize our standard workflows."
   spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage = "https://github.com/davidbesonen/boc_gem"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
