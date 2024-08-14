@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["david.besonen139@gmail.com"]
 
   spec.summary = "The boc_gem is a simple gem that provides a variety of convenience methods that are designed to optimize our standard workflows."
-  spec.description = "TODO: Write a longer description or delete this line."
+  spec.description = "The boc_gem is a simple gem that provides a variety of convenience methods that are designed to optimize our standard workflows. The gem includes a CLI that allows us to create views for a given controller, generate a migration file, and generate a model file."
   spec.homepage = "https://github.com/davidbesonen/boc_gem"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
