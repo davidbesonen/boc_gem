@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require_relative '../lib/boc_gem/cli'
+
+BocGem::CLI.start(ARGV)
