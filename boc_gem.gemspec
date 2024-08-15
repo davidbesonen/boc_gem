@@ -3,6 +3,11 @@
 require_relative "lib/boc_gem/version"
 
 Gem::Specification.new do |spec|
+  spec.name = "boc_gem"
+  spec.version = BocGem::VERSION
+  spec.authors = ["David Besonen"]
+  spec.email = ["david.besonen139@gmail.com"]
+  
   spec.summary = "The boc_gem is a simple gem that provides a variety of convenience methods that are designed to optimize our standard workflows."
   spec.description = "The boc_gem is a simple gem that provides a variety of convenience methods that are designed to optimize our standard workflows. The gem includes a CLI that allows us to create views for a given controller, generate a migration file, and generate a model file."
   spec.homepage = "https://github.com/davidbesonen/boc_gem"
