@@ -8,7 +8,7 @@ module BocGem
     def make_views(controller_name)
       # Create the views directory if it doesn't exist
       views_path = File.join('app/views', controller_name)
-      FileUtils.mkdir_p(views_path)
+      ::FileUtils.mkdir_p(views_path)
       
       view_files = {
         'index' => 'index.html.haml',
